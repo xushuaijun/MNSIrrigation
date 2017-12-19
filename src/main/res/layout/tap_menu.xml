@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_8"
+    android:background="@drawable/popmenu_bg">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_tap_add"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/dp_8"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="@dimen/sp_20"-->
+        <!--android:text="添加"/>-->
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_wgbd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="网关绑定"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_wgjb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="网关解绑"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+</LinearLayout>

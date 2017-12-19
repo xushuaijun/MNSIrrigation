@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:minHeight="60dp"
+    android:background="@color/bg_lightblack"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_child"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:src="@drawable/menu_arrow"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="区域用水量统计"
+        android:textColor="@color/font_gray"
+        android:paddingLeft="30dp"
+        android:textSize="@dimen/sp_15"
+        />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <com.xsyj.irrigation.customview.WheelView
+        android:id="@+id/wv_sysb"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="3"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_add_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_register_selector"
+        android:text="取消"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btn_add_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login_selector"
+        android:text="确定"
+        android:textColor="@color/font_white"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

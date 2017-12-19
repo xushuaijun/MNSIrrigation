@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_homepae_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/title_bg"
+        android:paddingLeft="16dp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_homepage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:text="出地桩监控"
+            android:textColor="@color/font_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btn_homepage_editer"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FF44E24C"
+            android:text="控制"
+            android:gravity="center"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/sp_16"/>
+        <ImageButton
+            android:id="@+id/btn_homepage_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+              android:paddingRight="16dp"
+            android:src="@drawable/add" />
+        <ImageButton
+            android:id="@+id/btn_homepage_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:paddingRight="16dp"
+            android:background="#00000000"
+            android:src="@drawable/submit"
+            android:layout_centerVertical="true"/>
+        <ImageButton
+            android:id="@+id/btn_homepage_lgzjh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00000000"
+            android:paddingRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_homepage_tj"
+            android:src="@drawable/lgzjh" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_homepage_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_homepae_titlebar"
+        android:background="@drawable/dividing_line" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_homepage_selcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab1_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="出地桩监控"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab2_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="轮灌组监控"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_homepage_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/tab3_bar_selector"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:text="轮灌组设置"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_homepage_selcontent"
+        android:background="@drawable/dividing_line" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_homepage_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divider_homepage"
+        android:layout_below="@+id/divider_homepage_titlebar">
+
+    </FrameLayout>
+
+</RelativeLayout>

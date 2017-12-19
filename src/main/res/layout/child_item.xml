@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dp_20"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="轮灌组名称:"
+            android:textSize="@dimen/sp_15"/>
+        <TextView
+            android:id="@+id/zq_lgzN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1号轮灌组"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/font_lightgreen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="出地桩-出水口:"
+            android:textSize="@dimen/sp_15"/>
+        <TextView
+            android:id="@+id/zq_csk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6-1-3-A,6-1-4-A,6-1-5-A,6-1-7-A,6-1-8-A,6-1-9-A"
+            android:ellipsize="end"
+            android:maxEms="18"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/font_lightgreen"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="开始时间:"
+            android:textSize="@dimen/sp_15"/>
+        <TextView
+            android:id="@+id/zq_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-08-12 14:35:00"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/font_red"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="结束时间:"
+            android:textSize="@dimen/sp_15"/>
+        <TextView
+            android:id="@+id/zq_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-08-12 14:45:00"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/font_red"/>
+    </LinearLayout>
+
+</LinearLayout>

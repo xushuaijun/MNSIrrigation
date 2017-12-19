@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:id="@+id/compstatis_rgp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rbtn_water_statis"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="水量综合统计"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@drawable/text_green_selector"
+            android:gravity="center"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbtn_balance_analysis"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="水量平衡分析"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@drawable/text_green_selector"
+            android:gravity="center"/>
+
+    </RadioGroup>
+</LinearLayout>

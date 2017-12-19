@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+   <TextView
+       android:id="@+id/irr_count"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="第一次轮灌"
+       android:layout_alignParentLeft="true"
+       android:textColor="@color/font_black"/>
+    <TextView
+        android:id="@+id/irr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4月1号-4月5号"
+        android:layout_centerInParent="true"
+        android:textColor="@color/font_black"/>
+    <TextView
+        android:id="@+id/irr_wateryield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/font_black"/>
+
+</RelativeLayout>

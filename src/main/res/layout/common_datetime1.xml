@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    >
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/bg_gray"
+        android:textColor="@color/font_black"
+        android:textSize="20sp"/>
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:theme="@style/AppTheme.Dialog"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        />
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_below="@id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:theme="@style/AppTheme.Dialog"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/alert_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login_selector"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/bg_white"
+            android:layout_marginRight="10dp"
+            android:text="确定"/>
+        <Button
+            android:id="@+id/alert_clear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_register_selector"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/btn_lightgreen"
+            android:layout_marginRight="10dp"
+            android:text="清空"/>
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_register_selector"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/btn_lightgreen"
+            android:visibility="gone"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+</LinearLayout>

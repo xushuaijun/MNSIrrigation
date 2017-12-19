@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/dl_main"
+    >-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--app:layout_scrollFlags
+        1、scroll: 所有想滚动出屏幕的view都需要设置这个flag， 没有设置这个flag的view将被固定在屏幕顶部。
+        例如，TabLayout 没有设置这个值，将会停留在屏幕顶部。
+        2、enterAlways: 设置这个flag时，向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+        3、enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时，你的视图只能已最小高度进入，
+        只有当滚动视图到达顶部时才扩大到完整高度。
+        4、exitUntilCollapsed: 滚动退出屏幕，最后折叠在顶端。-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Theme.AppCompat.Light" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="田间灌溉管理系统"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <com.xsyj.irrigation.customview.SlideShowView
+                android:id="@+id/main_slideshowView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <com.github.glomadrian.loadingballs.BallView
+                android:id="@+id/ball_main"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:balls="3"
+                app:movement_cycle_time="2000"
+                app:enable_size_animation="true"
+                app:size_cycle_time="500"
+                app:min_ball_size="5dp"
+                app:max_ball_size="12dp"
+                app:ball_colors="@array/colors"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <com.xsyj.irrigation.customview.AdvancedGridView
+            android:id="@+id/gridview_menu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="@android:color/white"
+            android:tag="2,3" />
+
+
+
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingTop="@dimen/dp_5"
+         android:paddingBottom="@dimen/dp_5"
+         android:background="@android:color/white"
+
+        >
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:gravity="center"
+             android:layout_weight="1">
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="累计灌溉总量"
+                 android:textColor="@android:color/darker_gray"
+                 android:layout_marginTop="@dimen/dp_7"
+                 android:layout_gravity="center"/>
+
+             <TextView
+                 android:id="@+id/tv_main_total_water"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0.0m³"
+                 android:textColor="@android:color/black"
+                 android:textStyle="bold"
+                 android:layout_gravity="center"/>
+
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:gravity="center"
+             android:layout_weight="1">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="累计灌溉时长"
+                 android:textColor="@android:color/darker_gray"
+                 android:layout_marginTop="@dimen/dp_7"
+                 android:layout_gravity="center"/>
+
+             <TextView
+                 android:id="@+id/tv_main_total_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0.0天"
+                 android:textColor="@android:color/black"
+                 android:textStyle="bold"
+                 android:layout_gravity="center"/>
+
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1">
+             <!--<FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 >
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/dialog_style_xml_icon"
+                     android:layout_gravity="center"/>
+                 <TextView
+                     android:id="@+id/tv_main_total_times"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="500"
+                     android:textColor="@android:color/black"
+                     android:layout_gravity="center"/>
+             </FrameLayout>-->
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="累计灌溉次数"
+                 android:textColor="@android:color/darker_gray"
+                 android:layout_marginTop="@dimen/dp_7"
+                 android:layout_gravity="center"/>
+
+             <TextView
+                 android:id="@+id/tv_main_total_times"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0次"
+                 android:textColor="@android:color/black"
+                 android:textStyle="bold"
+                 android:layout_gravity="center"/>
+
+
+
+         </LinearLayout>
+
+
+     </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+   <!-- <fragment
+        android:id="@+id/id_right_menu"
+        android:name="com.xsyj.irrigation.fragment.TurnListFragment"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:tag="Right" />
+</android.support.v4.widget.DrawerLayout>-->
+
+
+
+
+

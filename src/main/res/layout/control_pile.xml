@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_8"
+    android:background="@drawable/popmenu_bg">
+    <TextView
+        android:id="@+id/tv_tap_taskstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="任务详情"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="控制开"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="控制关"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_timercontrol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="定时"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_reback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="复位"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_dwcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="多网抄表"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_qwcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="全网抄表"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_tbsz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="同步时钟"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+    <TextView
+        android:id="@+id/tv_tap_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="取消"/>
+    <LinearLayout style="@style/common_horizontal_division_line_style" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.xsyj.irrigation"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 5
+        versionName "1.5"
+    }
+
+        buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+buildscript {
+
+    repositories {
+
+        jcenter()
+
+    }
+
+    dependencies {
+
+        dependencies {
+            classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile files('libs/xUtils3.0.jar')
+    compile project(':loadingballs')
+    compile project(':library')
+    compile files('libs/commons-codec-1.6.jar')
+    compile 'org.apache.httpcomponents:httpcore:4.2.4'
+    //        compile files('libs/org.apache.http.legacy.jar')
+    provided files('libs/httpmime-4.4.1.jar')
+    compile 'com.github.hotchemi:permissionsdispatcher:2.1.2'
+    apt "com.github.hotchemi:permissionsdispatcher-processor:2.1.2"
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+}

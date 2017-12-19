@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.plus.life.lifeplusplus.socket.SocketTestActivity">
+
+     <EditText
+         android:id="@+id/et1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="填写消息"
+         android:text="010145689265856595360016000000150000000088FBFA0B8f610100160000330a2BC4FCFC"
+         />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接服务器"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送信息"/>
+
+   <TextView
+       android:id="@+id/tv1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="返回结果"/>
+
+</LinearLayout>

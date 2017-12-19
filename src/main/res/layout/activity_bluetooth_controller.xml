@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xsyj.irrigation.BluetoothControllerActivity">
+
+<include
+    layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"/>
+        <TextView
+            android:id="@+id/tv_ble_isconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/lightblue"
+            android:text="未连接"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发送"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valvenumber"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/grey_black_3"
+            />
+        <EditText
+            android:id="@+id/et_valve_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="如456212"
+            android:textColorHint="@color/Light_gray"
+            />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg_ble_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/rbtn_a_open"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="A开"
+            android:textSize="15dp"
+            />
+        <RadioButton
+            android:id="@+id/rbtn_b_open"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="B开"
+            android:textSize="15dp"
+           />
+        <RadioButton
+            android:id="@+id/rbtn_restoration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="复位"
+            android:textSize="15dp"
+            />
+        <RadioButton
+            android:id="@+id/rbtn_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="关"
+            android:textSize="15dp"
+            />
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/lv_blue_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

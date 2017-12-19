@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context="com.xsyj.irrigation.IrrControlActivity"
+    >
+    <include
+        layout="@layout/title_bar"
+        />
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+          >
+            <!--android:background="@drawable/top_background"-->
+            <RelativeLayout
+                android:id="@+id/rlSearchFrameDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/search_frame"
+                    android:text="阀门编号，出地桩名称，轮灌组名称"
+                    android:paddingLeft="32dp"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/ivDeleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_page1_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="@color/font_lightpurple"
+            android:textSize="@dimen/sp_15"
+            android:layout_toRightOf="@id/rlSearchFrameDelete"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"/>
+        <!--<LinearLayout-->
+        <!--android:id="@+id/btn_page1_sx"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/dp_10">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="筛选"-->
+        <!--android:textColor="@color/font_lightpurple"-->
+        <!--android:textSize="@dimen/sp_20" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_page1_sx"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/sx_tag1" />-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
